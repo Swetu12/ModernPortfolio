@@ -6,8 +6,8 @@ import { profile } from "console";
 
 const Footer = () => {
   return (
-    <footer className="w-full pt-20 pb-10 mb-[100px] md:mb-5" id="contact">
-      <div className="w-full absolute left-0 -bottom-72 min-h-96">
+    <footer className="relative pb-2 mb-5" id="contact">
+      <div className="w-full absolute left-0 -bottom-72">
         <img
           src="footer-grid.svg"
           alt="grid"
@@ -23,13 +23,13 @@ const Footer = () => {
           Reach out to me today and let&apos;s discuss how I can help you
           achieve your goals.
         </p>
-        <a href="mailto:alexandrugeroc2007@gmail.com">
-          <MagicButton
-            title="Let's get in touch"
-            icon={<FaLocationArrow />}
-            position="right"
-          />
-        </a>
+
+        <MagicButton
+          href="mailto:alexandrugeroc2007@gmail.com"
+          title="Let's get in touch"
+          icon={<FaLocationArrow />}
+          position="right"
+        />
       </div>
       <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
         <p className="md:text-base text-sm md:font-normal font-light">
