@@ -2,14 +2,37 @@ import { projects } from "@/data";
 import React from "react";
 import { PinContainer } from "./ui/3d-pin";
 import { FaLocationArrow } from "react-icons/fa";
+import { FlipWords } from "./ui/flip-words";
+import { TypewriterEffectSmooth } from "./ui/typewriter-effect";
 
 function RecentProjects() {
+  const words = [
+    {
+      text: "A",
+    },
+    {
+      text: "small",
+    },
+    {
+      text: "selection",
+    },
+    {
+      text: "of",
+    },
+    {
+      text: "recent",
+      className: "text-purple dark:text-purple",
+    },
+    {
+      text: "projects.",
+      className: "text-purple dark:text-purple",
+    },
+  ];
   return (
     <div className="py-20" id="projects">
-      <h1 className="heading">
-        A small selection of{" "}
-        <span className="text-purple">recent projects</span>
-      </h1>
+      <div className="flex flex-col items-center justify-center">
+        <TypewriterEffectSmooth words={words} />
+      </div>
       <div className="flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-8 mt-10">
         {projects.map(({ id, title, des, img, iconLists, link }) => (
           <div

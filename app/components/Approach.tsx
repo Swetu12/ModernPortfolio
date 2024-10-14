@@ -3,13 +3,23 @@ import React from "react";
 
 import { AnimatePresence, motion } from "framer-motion";
 import { CanvasRevealEffect } from "./ui/CanvasRevealEffect";
+import { TypewriterEffectSmooth } from "./ui/typewriter-effect";
 
 const Approach = () => {
+  const words = [
+    {
+      text: "My",
+    },
+    {
+      text: "Approach.",
+      className: "text-purple dark:text-purple",
+    },
+  ];
   return (
     <section className="w-full py-20">
-      <h1 className="heading">
-        My <span className="text-purple">approach</span>
-      </h1>
+      <div className="flex flex-col items-center justify-center">
+        <TypewriterEffectSmooth words={words} />
+      </div>
       <div className="my-20 flex flex-col lg:flex-row items-center justify-center   gap-4 ">
         <Card
           title="Planing & Strategy"

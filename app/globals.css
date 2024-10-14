@@ -86,4 +86,26 @@
   .black-gradient {
     background: linear-gradient(90deg, #161a31 0%, #06091f 100%);
   }
+
+  .animate-fade-in {
+    animation: fade-in;
+  }
+
+  .duration-1s {
+    animation-duration: 1s;
+  }
+
+  .delay-2s {
+    animation-delay: 2s;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
