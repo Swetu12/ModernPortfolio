@@ -73,11 +73,11 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: "COMING SOON",
-    des: "COMING SOON COMING SOON COMING SOON COMING SOON COMING SOON COMING SOON COMING SOON COMING SOON COMING SOON",
-    img: "/comingsoon.jpg",
+    title: "3D Animated Portfolio",
+    des: "The website was built using Next.js and React, incorporating TypeScript for type safety and Tailwind CSS for a modern, responsive design. It showcases various projects, highlighting skills in web development and user experience. By leveraging these technologies, the site provides a seamless and interactive browsing experience, reflecting a commitment to modern web standards.",
+    img: "/portfolio.jpg",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "COMING SOON COMING SOON",
+    link: "https://halexx-portfolio.vercel.app/",
   },
   {
     id: 2,
