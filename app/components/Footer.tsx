@@ -3,17 +3,11 @@ import MagicButton from "./ui/MagicButton";
 import { FaLocationArrow } from "react-icons/fa";
 import { socialMedia } from "@/data";
 import { profile } from "console";
+import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="relative pb-2 mb-5" id="contact">
-      <div className="w-full absolute left-0 -bottom-72">
-        <img
-          src="footer-grid.svg"
-          alt="grid"
-          className="w-full h-full opacity-50"
-        />
-      </div>
+    <footer className="relative pb-2 mb-5 " id="contact">
       <div className="flex flex-col items-center">
         <h1 className="heading lg:max-w-[45vw]">
           Ready to take <span className="text-purple">your</span> outside
@@ -24,12 +18,13 @@ const Footer = () => {
           achieve your goals.
         </p>
 
-        <MagicButton
-          href="mailto:alexandrugeroc2007@gmail.com"
-          title="Let's get in touch"
-          icon={<FaLocationArrow />}
-          position="right"
-        />
+        <Link href="mailto:alexandrugeroc2007@gmail.com">
+          <MagicButton
+            title="Let's get in touch"
+            icon={<FaLocationArrow />}
+            position="right"
+          />
+        </Link>
       </div>
       <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
         <p className="md:text-base text-sm md:font-normal font-light">

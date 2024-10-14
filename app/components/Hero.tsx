@@ -3,6 +3,7 @@ import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import MagicButton from "./ui/MagicButton";
 import { FaLocationArrow } from "react-icons/fa";
+import Link from "next/link";
 const Hero = () => {
   return (
     <div className="pb-20 pt-15 md:pt-36">
@@ -35,18 +36,13 @@ const Hero = () => {
             Hi, I&apos;m Alex, a Web Developer based in Romania
           </p>
 
-          <MagicButton href="#about"
-            title="Show my work"
-            icon={<FaLocationArrow />}
-            position="right"
-            onClick = {() => {
-              window.location.href = "#about";
-              window.scrollTo({
-                top: document.getElementById("about")?.offsetTop,
-                behavior: "smooth",}
-            }}
+          <Link href="#about">
+            <MagicButton
+              title="See my work"
+              icon={<FaLocationArrow />}
+              position="right"
             />
-            
+          </Link>
         </div>
       </div>
     </div>
